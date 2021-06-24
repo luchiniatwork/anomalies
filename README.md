@@ -5,6 +5,7 @@
 * [Getting Started](#getting-started)
 * [Rationale](#rationale)
 * [The Categories](#the-categories)
+* [Usage](#usage)
 * [Inspiration](#inspiration)
 * [Bugs](#bugs)
 * [Help!](#help)
@@ -101,6 +102,17 @@ can treat this as flavor text.
 | :conflict    | false           | coordinate with callee   | Give It Up                |
 | :fault       | false           | fix callee bug           | Falling                   |
 | :busy        | true            | backoff and retry        | Wait For Me               |
+
+## Usage
+
+Besides the usage described on the [Getting Started](#getting-started)
+session with `anom/throw-anom` you can also create a valid anomaly
+with the function `anom/->Anom`:
+
+``` clojure
+(throw (ex-info "Oops" (-> (anom/->Anom "Oops" {::anom/category ::anom/not-found})
+                           (assoc :my-app/details "Resource not found!"))))
+```
 
 ## Inspiration
 
