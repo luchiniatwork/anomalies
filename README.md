@@ -31,7 +31,7 @@ Throw with `anom/throw` instead:
 (anom/throw "Oops")
 ```
 
-Explore thrown expcetion with `ex-data`:
+Explore thrown exception with `ex-data`:
 
 ``` clojure
 (ex-data e) ;;=> #:anomalies.core{:message "Oops,
@@ -88,7 +88,7 @@ might fix problems in this category.
 
 The "song" column contains a Hall and Oates song. The idea that Hall
 and Oates are software gurus is controversial in some circles, so you
-can treat this as flavortext.
+can treat this as flavor text.
 
 | category     | retry-possible? | fix                      | song                      |
 | ----         | ----            | ---                      | ---                       |
