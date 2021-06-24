@@ -16,7 +16,7 @@ Add `anomalies` as a dependency in your `deps.edn` file:
 
 ``` clojure
 {:deps
- {:luchiniatwork/anomalies {:mvn/version "0.0.2"}}}
+ {net.clojars.luchiniatwork/anomalies {:mvn/version "0.0.2"}}}
 ```
 
 Require `anomalies` where needed:
